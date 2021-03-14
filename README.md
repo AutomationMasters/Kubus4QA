@@ -1,2 +1,3 @@
-# k4qa-github-installer
- Kubus4QA
+# Kubus4QA
+
+Free Version (30 Tage Testversion)
