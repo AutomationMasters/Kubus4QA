@@ -63,23 +63,23 @@ Zum Ausführen gibt es mehrere Funktionen:
 ### Öffnen von Datei und Ordnern - mit und ohne Dialog
 <pre>
  - OPEN                       öffnet den im <Pfad> hinterlegten Ordner oder ein Programm.
-                               Bsp.1: s1=1: Öffne Ordner 2|OPEN|C:\Folder1\Folder2
-                               Bsp.2: s2=2: Öffne Programm|OPEN|C:\PlugPlay\tool.exe
+Bsp.1: s1=1: Öffne Ordner 2|OPEN|C:\Folder1\Folder2
+Bsp.2: s2=2: Öffne Programm|OPEN|C:\PlugPlay\tool.exe
 
  - OPENDIALOG                 öffnet eine Datei in einem Programm durch ein Auswahl-Dialog.
                                Pfadangaben: <Pfad zum Programm>
-                               Bsp.: s1=1: Öffne Notepad++ und wähle Datei|OPENDIALOG|notepad++.exe
+Bsp.: s1=1: Öffne Notepad++ und wähle Datei|OPENDIALOG|notepad++.exe
 
  - OPENFILE                   öffnet eine festgelegte Datei oder Angaben über ein Programm.
                                Pfadangaben: <Pfad zum Programm>;<Pfad zur Datei>
                                Es können auch URL oder Schlagwörter in Browsern übergeben werden:
-                               Bsp.1: s1=1: Öffne Browser|OPENFILE|chrome.exe;https://pdv.de
-                               Bsp.2: s2=2: Öffne Datei|OPENFILE|notepad++.exe;C:\files\meintext.txt
+Bsp.1: s1=1: Öffne Browser|OPENFILE|chrome.exe;https://pdv.de
+Bsp.2: s2=2: Öffne Datei|OPENFILE|notepad++.exe;C:\files\meintext.txt
 
  - OPENREGISTRY               öffnet Registry mit hinterlegten Pfad.
                                Pfadangaben: <Pfad zum Programm>;<Pfad zur Datei>
                                Es können auch URL oder Schlagwörter in Browsern übergeben werden:
-                               Bsp.1: s1=1: Öffnet Registry mit Pfad|OPENREGISTRY|HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\16.0\Word\InstallRoot
+Bsp.1: s1=1: Öffnet Registry mit Pfad|OPENREGISTRY|HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\16.0\Word\InstallRoot
 </pre>
 
 ### Öffnen von Datei und Ordnern
@@ -87,20 +87,20 @@ Zum Ausführen gibt es mehrere Funktionen:
  - START                      startet ein im <Pfad> hinterlegtes Programm per ShellExecute().
                                !Der Befehl unterstützt keine MagicWords und dient zum aufrufen,
                                Windows eigene Programme:
-                               Bsp.: s1=1: Ereignisanzeige|START|eventvwr.exe
+Bsp.: s1=1: Ereignisanzeige|START|eventvwr.exe
 </pre>
 
 ### AU3 Script direkt ausführen
 <pre>
  - AU3                        startet ein im <Pfad> hinterlegtes Au3-Script direkt als ausfürbares Programm.
-                               Bsp.: s1=1: Demo au3-Script ausführen|AU3|C:\scripts\demo.au3
+Bsp.: s1=1: Demo au3-Script ausführen|AU3|C:\scripts\demo.au3
 </pre>
 
 ### Systemsterungs - Dialoge
 <pre>
  - CPL                        öffnet eines der Systemeinstellungen zugeordneten Dialoge per Run()
                                Der Befehl unterstützt keine {MagicWord}!
-                               Bsp.: s1=1: Programme löschen|CPL|appwiz.cpl
+Bsp.: s1=1: Programme löschen|CPL|appwiz.cpl
 </pre>
 
 ### Speichern in Clipboard (Zwischenspeicher)
@@ -108,11 +108,11 @@ Zum Ausführen gibt es mehrere Funktionen:
  - CLIPPATH                   speichert ein durch den <Pfad> hinterlegtes Script oder Vorlage
                                in den Zwischenspeicher. Es können {MagicWord} in der Vorlage 
                                verwendet werden. 
-                               Bsp.: s1=1: Aus Vorlage in Clipboard|CLIPPATH|C:\scripts\clip.txt
+Bsp.: s1=1: Aus Vorlage in Clipboard|CLIPPATH|C:\scripts\clip.txt
 
  - CLIPSTRING                 speichert den im <Pfad> hinterlegte einen String in die Zwischenablage. 
                                Es können dabei {MagicWord} verwendet werden. 
-                               Bsp.: s1=1: String in Clipboard|CLIPSTRING|Ich bin {@UserName}
+Bsp.: s1=1: String in Clipboard|CLIPSTRING|Ich bin {@UserName}
 </pre>
 
 ### Kopieren von Ordnern und Dateien
@@ -121,13 +121,13 @@ Zum Ausführen gibt es mehrere Funktionen:
                                Zielsystem ab. Wird kein Endpfad nach dem ; angegeben wird die Kopie auf dem  
                                Desktop abgelegt. Ansonsten am angegebenen Pfad. Es können dabei {MagicWord} 
                                verwendet werden. 
-                               Bsp.1: s1=1: Datei kopieren auf den Desktop|COPYFILE|{@GlobalDir}\template.docx
-                               Bsp.2: s2=2: Datei aun Platz kopieren|COPYFILE|{@ScriptDir}\template.docx;{@DesktopDir}\Ordnername
+Bsp.1: s1=1: Datei kopieren auf den Desktop|COPYFILE|{@GlobalDir}\template.docx
+Bsp.2: s2=2: Datei aun Platz kopieren|COPYFILE|{@ScriptDir}\template.docx;{@DesktopDir}\Ordnername
 
  - COPYFOLDER                 kopiert einen Ordner an einem anderen Platz. Wurde kein ; gesetzte wird der Ordner 
                                auf den Desktop abgelegt. Ansonsten am angegebenen Pfad. Es können dabei {MagicWord} 
-                               Bsp.1: s1=1: Ordner auf den Dektop kopieren|COPYFOLDER|{@GlobalDir}\Data
-                               Bsp.2: s2=2: Ordner zu Pfad kopieren|COPYFOLDER|{@GlobalDir}\Data;{@DesktopDir}\MyFolder_{@UserName}-{HEUTE}
+Bsp.1: s1=1: Ordner auf den Dektop kopieren|COPYFOLDER|{@GlobalDir}\Data
+Bsp.2: s2=2: Ordner zu Pfad kopieren|COPYFOLDER|{@GlobalDir}\Data;{@DesktopDir}\MyFolder_{@UserName}-{HEUTE}
 
  - COPYFOLDERDIALOG           kopiert einen Ordner per Dialoge. Es können dabei {MagicWord} Dabei wird
                                in vier unterschiedliche Möglichkeiten unterschieden:
@@ -135,10 +135,10 @@ Zum Ausführen gibt es mehrere Funktionen:
                            (2) Mit ; ohne Angaben: Auswahl des Ordners per Dialog; Dialog zur Auswahl um Kopie zu gespeichern.
                            (3) Mit Pfadangabe: Nur Dialog zur Auswahl um Kopie zu speichern wird geöffnet.
                            (4) Mit ; und Pfadangabe: Nur Dialog zur Auswahl des Ordners wir geöffnet; wird über Pfadangabe nach ; gespeichert.
-                               Bsp.1: s1=1: Dialog Starten und auf Desktop ablegen|COPYFOLDERDIALOG|
-                               Bsp.2: s2=2: Dialoge zur Auswahl eines Ordner und zum speichern|COPYFOLDERDIALOG|;
-                               Bsp.3: s3=3: Dialog zum speichern der Kopie (mit Ausgangspfad)|COPYFOLDERDIALOG|{@ScriptDir}\app\templates
-                               Bsp.4: s4=4: Dialog zur Auswahl des Ordners (mit Zielpfad)|COPYFOLDERDIALOG|;{@DesktopDir}\MyFolder_{@UserName}-{HEUTE}
+Bsp.1: s1=1: Dialog Starten und auf Desktop ablegen|COPYFOLDERDIALOG|
+Bsp.2: s2=2: Dialoge zur Auswahl eines Ordner und zum speichern|COPYFOLDERDIALOG|;
+Bsp.3: s3=3: Dialog zum speichern der Kopie (mit Ausgangspfad)|COPYFOLDERDIALOG|{@ScriptDir}\app\templates
+Bsp.4: s4=4: Dialog zur Auswahl des Ordners (mit Zielpfad)|COPYFOLDERDIALOG|;{@DesktopDir}\MyFolder_{@UserName}-{HEUTE}
 
 </pre>
 
@@ -146,33 +146,33 @@ Zum Ausführen gibt es mehrere Funktionen:
 <pre>
  - ZIP                        Zipt den Inhalt eines über den Pfad festgelegten Ordner uns speichert die 
                                Datei, mit Datum und Uhrzeit im Namen auf dem Desktop. 
-                               Bsp.1: s1=1: Ordner zippen (auf den Desktop ablegen)|ZIP|{@ScriptDir}\MyFolder
-                               Bsp.2: s2=2: Ordner zippen (an anderen Ort ablegen)|ZIP|{@ScriptDir}\MyFolder;{@DesktopDir}\test.zip
+Bsp.1: s1=1: Ordner zippen (auf den Desktop ablegen)|ZIP|{@ScriptDir}\MyFolder
+Bsp.2: s2=2: Ordner zippen (an anderen Ort ablegen)|ZIP|{@ScriptDir}\MyFolder;{@DesktopDir}\test.zip
 
  - UNZIP                      Entpackt den Inhalt einer über den Pfad festgelegten Zip-Datei uns speichert 
                                sie in einem Ordner mit Datum und Uhrzeit auf dem Desktop. 
-                               Bsp.1: s1=1: Zip (auf den Desktop entpacken)|UNZIP|{@ScriptDir}\test.zip
-                               Bsp.2: s2=2: Zip (an anderen Ort entpacken)|UNZIP|{@ScriptDir}\test.zip;{@DesktopDir}\MyFolder
+Bsp.1: s1=1: Zip (auf den Desktop entpacken)|UNZIP|{@ScriptDir}\test.zip
+Bsp.2: s2=2: Zip (an anderen Ort entpacken)|UNZIP|{@ScriptDir}\test.zip;{@DesktopDir}\MyFolder
 </pre>
 
 ### Öffnen von Systemvariablem / MagicPath
 <pre>
  - MAGICPATH                  öffnet ein {@MagicWordPath} welcher im Feld <Pfad> hinterlegt wurde:
-                               Bsp.: s1=1: Öffne MagicWord Pfad|MAGICPATH|{@AppDataDir}
+Bsp.: s1=1: Öffne MagicWord Pfad|MAGICPATH|{@AppDataDir}
 </pre>
 
 ### Zusammenführen von mehreren Dateien (txt)
 <pre>
  - MERGE                      verbindet Inhalte unterschiedlicher Dateien (txt) miteinander. Dabei kann gewählt werden
                                ob der Merge in den Zwischenspeicher geschrieben werden soll, ober als Datei auf den Rechner. 
-                               Bsp.1: s1=1: Merge an Ort|MERGE|{@ScriptDir}\app\scripts\today.txt,{@ScriptDir}\app\scripts\magicwords.txt
-                               Bsp.2: s2=2: Merge in Zwischenspeicher|MERGE|{@ScriptDir}\app\scripts\today.txt,{@ScriptDir}\app\scripts\magicwords.txt;{@DesktopDir}\MyMerge-{HEUTE}.txt
+Bsp.1: s1=1: Merge an Ort|MERGE|{@ScriptDir}\app\scripts\today.txt,{@ScriptDir}\app\scripts\magicwords.txt
+Bsp.2: s2=2: Merge in Zwischenspeicher|MERGE|{@ScriptDir}\app\scripts\today.txt,{@ScriptDir}\app\scripts\magicwords.txt;{@DesktopDir}\MyMerge-{HEUTE}.txt
 </pre>
 
 ### Auslesen eines Registry-Pfad
 <pre>
  - REGISTRY                   Auslesen der Registry
-                               Bsp.1: s1=1: Lese Registry|REGISTRY|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer;svcVersion
+Bsp.1: s1=1: Lese Registry|REGISTRY|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer;svcVersion
 </pre>
 
 ## Anpassen (app.ini)
