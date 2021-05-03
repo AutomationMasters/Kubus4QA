@@ -73,7 +73,7 @@ Bsp.: s1=1: Öffne Notepad++ und wähle Datei|OPENDIALOG|notepad++.exe
  - OPENFILE                   öffnet eine festgelegte Datei oder Angaben über ein Programm.
                                Pfadangaben: <Pfad zum Programm>;<Pfad zur Datei>
                                Es können auch URL oder Schlagwörter in Browsern übergeben werden:
-Bsp.1: s1=1: Öffne Browser|OPENFILE|chrome.exe;https://pdv.de
+Bsp.1: s1=1: Öffne Browser|OPENFILE|chrome.exe;https://www.domain.tld
 Bsp.2: s2=2: Öffne Datei|OPENFILE|notepad++.exe;C:\files\meintext.txt
 
  - OPENREGISTRY               öffnet Registry mit hinterlegten Pfad.
